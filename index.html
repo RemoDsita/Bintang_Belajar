@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bintang Belajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/img/bintang_logo.png" alt="" class="logo-img">
+            <div class="logo-text">
+                <span class="bintang">Bintang</span>Belajar
+            </div>
+        </div>
+        <div class="burger-menu">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
+        <div class="nav-links">
+            <ul class="main-menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#materi">Belajar</a></li>
+                <li><a href="#mengeja">Mengeja</a></li>
+                <li><a href="#game">Game</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+            <a href="#" class="login-btn" onclick="loginWithGoogle()">Masuk</a>
+        </div>
+    </nav>
+
+    <section id="beranda">
+        <div class="beranda-content">
+            <div class="beranda-text">
+                <h1>Belajar Membaca Menyenangkan!</h1>
+                <p>Mari belajar membaca dengan cara yang mengasyikkan</p>
+            </div>
+            <div class="beranda-image">
+                <img src="/img/beranda-logo.png" alt="Ilustrasi Belajar">
+            </div>
+        </div>
+    </section>
+
+    <section id="materi">
+        <h2>Mengenal Huruf & Angka</h2>
+        <div class="materi-grid">
+            <div class="materi-item">
+                <h3>Huruf</h3>
+                <div class="huruf-content">
+                    <div class="huruf-slider">
+                        <button class="prev-btn">&#10094;</button>
+                        <div class="huruf-slide">
+                            <div class="huruf" data-sound="/sounds/a.mp3">A</div>
+                        </div>
+                        <button class="next-btn">&#10095;</button>
+                    </div>
+                    <button class="play-sound">Putar Suara</button>
+                </div>
+            </div>
+            <div class="materi-item">
+                <h3>Angka</h3>
+                <div class="angka-content">
+                    <div class="angka-slider">
+                        <button class="prev-btn-angka">&#10094;</button>
+                        <div class="angka-slide">
+                            <div class="angka" data-sound="/sounds/angka0.mp3">0</div>
+                        </div>
+                        <button class="next-btn-angka">&#10095;</button>
+                    </div>
+                    <button class="play-sound-angka">Putar Suara</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mengeja">
+        <h2>Belajar Mengeja</h2>
+        <div class="mengeja-container">
+            <div class="mengeja-card">
+                <div class="kata-display">BOLA</div>
+                <div class="mengeja-buttons">
+                    <button class="eja-btn">Eja Per Huruf</button>
+                    <button class="kata-btn">Ucap Kata</button>
+                </div>
+                <div class="next-prev-buttons">
+                    <button class="prev-kata">&#10094;</button>
+                    <button class="next-kata">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game">
+        <h2>Game Tebak Gambar</h2>
+        <div class="game-container">
+            <div class="game-card">
+                <img src="gambar1.jpg" alt="Tebak Gambar" class="game-image">
+                <div class="pilihan-container">
+                    <button class="pilihan-btn">Kucing</button>
+                    <button class="pilihan-btn">Anjing</button>
+                    <button class="pilihan-btn">Kelinci</button>
+                    <button class="pilihan-btn">Hamster</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="/img/pp.jpg" alt="Konseptor" class="team-img">
+                <h3>Kelompok 6</h3>
+                <p class="role">Konsep & Ide</p>
+                <p class="desc">Bertanggung jawab dalam pengembangan konsep dan ide pembelajaran interaktif</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="/img/pp.jpg" alt="Penanggung Jawab" class="team-img">
+                <h3>Fitta Ummaya Santi, M.Pd.</h3>
+                <p class="role">Penanggung Jawab</p>
+                <p class="desc">Mengawasi dan memastikan kualitas konten pembelajaran</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="/img/pp.jpg" alt="Developer" class="team-img">
+                <h3>Esti Wangi</h3>
+                <p class="role">Pembuat</p>
+                <p class="desc">Mengembangkan dan membangun aplikasi pembelajaran</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <h2>Masuk</h2>
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Bintang Belajar</h4>
+                <p>Platform pembelajaran interaktif untuk anak-anak</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i data-feather="instagram"></i></a>
+                    <a href="#" class="social-icon"><i data-feather="youtube"></i></a>
+                    <a href="#" class="social-icon"><i data-feather="mail"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bintang Belajar. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth-compat.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
